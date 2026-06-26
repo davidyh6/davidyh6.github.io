@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Huang</title>
+  <meta name="description" content="Portfolio, projects, and contact information for David Huang.">
+  <meta name="theme-color" content="#0E2A47">
+
+  <meta property="og:title" content="David Huang">
+  <meta property="og:description" content="Portfolio, projects, and contact information for David Huang.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Decorative registration marks, purely visual -->
+  <div class="crop-marks" aria-hidden="true">
+    <span class="crop crop--tl"></span>
+    <span class="crop crop--tr"></span>
+    <span class="crop crop--bl"></span>
+    <span class="crop crop--br"></span>
+  </div>
+
+  <header class="titleblock">
+    <div class="titleblock__inner">
+      <span class="titleblock__name">YOUR NAME</span>
+      <nav class="titleblock__nav" aria-label="Section navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#archive">Archive</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO / NAME ============ -->
+    <section class="hero" id="about">
+      <p class="eyebrow">// DWG NO. 001 — PERSONAL PORTFOLIO</p>
+      <h1 class="hero__name">Your Name</h1>
+      <p class="hero__role">Software Engineer focused on [your specialty — e.g. backend systems, web apps, data tooling]</p>
+      <p class="hero__summary">
+        Replace this with a short two or three sentence bio: what you build, what you're
+        curious about, and what kind of work or role you're looking for next.
+      </p>
+      <div class="hero__links">
+        <a class="btn btn--primary" href="resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/davidyhuang/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn btn--ghost" href="mailto:davidyhuang6@gmail.com">Email</a>
+      </div>
+    </section>
+
+    <div class="dim-divider" role="separator" aria-hidden="true"><span>// 02 — SKILLS</span></div>
+
+    <!-- ============ CODING LANGUAGES ============ -->
+    <section class="skills" id="skills">
+      <h2 class="section-title">Coding Languages</h2>
+      <ul class="chips">
+        <li class="chip">Python</li>
+        <li class="chip">Java</li>
+        <li class="chip">C++</li>
+        <li class="chip">SQL</li>
+        <li class="chip">HTML / CSS</li>
+      </ul>
+    </section>
+
+    <div class="dim-divider" role="separator" aria-hidden="true"><span>// 03 — HIGHLIGHTED PROJECTS</span></div>
+
+    <!-- ============ HIGHLIGHTED PROJECTS ============ -->
+    <section class="projects" id="projects">
+      <h2 class="section-title">Highlighted Projects</h2>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-card__tag">FIG. 01 — REV A</div>
+          <h3 class="project-card__title">Project One Name</h3>
+          <p class="project-card__summary">
+            One paragraph summarizing the project: the problem it solves, who it's for,
+            and the overall approach you took to build it.
+          </p>
+          <ul class="project-card__bullets">
+            <li>Built [feature] using [language/framework], improving [metric] by [result].</li>
+            <li>Designed [a system, API, or data model] to handle [scale or constraint].</li>
+            <li>Shipped to [users/team], with [outcome or feedback].</li>
+          </ul>
+          <a class="project-card__link" href="https://github.com/yourusername/project-one" target="_blank" rel="noopener">github.com/yourusername/project-one ↗</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__tag">FIG. 02 — REV A</div>
+          <h3 class="project-card__title">Project Two Name</h3>
+          <p class="project-card__summary">
+            One paragraph summarizing the project: the problem it solves, who it's for,
+            and the overall approach you took to build it.
+          </p>
+          <ul class="project-card__bullets">
+            <li>Implemented [core feature] with [tech stack], solving [specific challenge].</li>
+            <li>Optimized [process or query] to reduce [latency/cost] by [amount].</li>
+            <li>Wrote tests / docs / CI to keep the project maintainable.</li>
+          </ul>
+          <a class="project-card__link" href="https://github.com/yourusername/project-two" target="_blank" rel="noopener">github.com/yourusername/project-two ↗</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__tag">FIG. 03 — REV A</div>
+          <h3 class="project-card__title">Project Three Name</h3>
+          <p class="project-card__summary">
+            One paragraph summarizing the project: the problem it solves, who it's for,
+            and the overall approach you took to build it.
+          </p>
+          <ul class="project-card__bullets">
+            <li>Researched and prototyped [approach], comparing it against [alternative].</li>
+            <li>Integrated [third-party API/service] to add [capability].</li>
+            <li>Presented results to [audience], leading to [next step].</li>
+          </ul>
+          <a class="project-card__link" href="https://github.com/yourusername/project-three" target="_blank" rel="noopener">github.com/yourusername/project-three ↗</a>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="dim-divider" role="separator" aria-hidden="true"><span>// 04 — OTHER PROJECTS</span></div>
+
+    <!-- ============ OTHER PROJECTS ============ -->
+    <section class="archive" id="archive">
+      <h2 class="section-title">Other Projects</h2>
+      <ul class="archive-list">
+        <li>
+          <a href="https://github.com/yourusername/project-four" target="_blank" rel="noopener">Project Four Name</a>
+          <span class="archive-list__desc">— one-line description of what it does.</span>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/project-five" target="_blank" rel="noopener">Project Five Name</a>
+          <span class="archive-list__desc">— one-line description of what it does.</span>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/project-six" target="_blank" rel="noopener">Project Six Name</a>
+          <span class="archive-list__desc">— one-line description of what it does.</span>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/project-seven" target="_blank" rel="noopener">Project Seven Name</a>
+          <span class="archive-list__desc">— one-line description of what it does.</span>
+        </li>
+        <li>
+          <a href="https://github.com/yourusername/project-eight" target="_blank" rel="noopener">Project Eight Name</a>
+          <span class="archive-list__desc">— one-line description of what it does.</span>
+        </li>
+      </ul>
+    </section>
+
+    <div class="dim-divider" role="separator" aria-hidden="true"><span>// 05 — CONTACT</span></div>
+
+    <!-- ============ EMAIL / CONTACT ============ -->
+    <section class="contact" id="contact">
+      <h2 class="section-title">Get in touch</h2>
+      <a class="contact__email" href="mailto:your.email@example.com">your.email@example.com</a>
+      <div class="hero__links">
+        <a class="btn btn--ghost" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="sitefooter">
+    <p>© <span id="year"></span> Your Name. Built with HTML &amp; CSS, hosted on GitHub Pages.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
