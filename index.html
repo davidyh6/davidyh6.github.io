@@ -5,33 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>David Huang</title>
   <meta name="description" content="Portfolio, projects, and contact information for David Huang.">
-  <meta name="theme-color" content="#0E2A47">
+  <meta name="theme-color" content="#C1440E">
 
   <meta property="og:title" content="David Huang">
   <meta property="og:description" content="Portfolio, projects, and contact information for David Huang.">
   <meta property="og:type" content="website">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Decorative registration marks, purely visual -->
-  <div class="crop-marks" aria-hidden="true">
-    <span class="crop crop--tl"></span>
-    <span class="crop crop--tr"></span>
-    <span class="crop crop--bl"></span>
-    <span class="crop crop--br"></span>
-  </div>
-
-  <header class="titleblock">
-    <div class="titleblock__inner">
-      <span class="titleblock__name">David Huang</span>
-      <nav class="titleblock__nav" aria-label="Section navigation">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <span class="site-header__name">David Huang</span>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="primary-nav" aria-label="Section navigation">
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#archive">Archive</a>
         <a href="#contact">Contact</a>
@@ -43,11 +35,28 @@
 
     <!-- ============ HERO / NAME ============ -->
     <section class="hero" id="about">
-      <p class="eyebrow">// DWG NO. 001 — PERSONAL PORTFOLIO</p>
+      <!-- <div class="hero__sunset" aria-hidden="true">
+        <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" role="presentation">
+          <defs>
+            <clipPath id="sun-clip"><rect x="0" y="0" width="400" height="150"/></clipPath>
+          </defs>
+          <circle cx="200" cy="150" r="110" fill="#C1440E" clip-path="url(#sun-clip)"/>
+          <g stroke="#FBF3E2" stroke-width="6" clip-path="url(#sun-clip)">
+            <line x1="0" y1="106" x2="400" y2="106"/>
+            <line x1="0" y1="128" x2="400" y2="128"/>
+            <line x1="0" y1="150" x2="400" y2="150"/>
+            <line x1="0" y1="172" x2="400" y2="172"/>
+          </g>
+          <circle cx="200" cy="150" r="150" fill="none" stroke="#2E2117" stroke-width="1" opacity="0.35"/>
+          <circle cx="200" cy="150" r="190" fill="none" stroke="#2E2117" stroke-width="1" opacity="0.2"/>
+        </svg>
+      </div> -->
+
+      <p class="eyebrow">Portfolio</p>
       <h1 class="hero__name">David Huang</h1>
-      <p class="hero__role">Economics @ NYU focused on Data Analytics</p>
+      <p class="hero__role">Economics @ NYU — focused on Data Analytics</p>
       <p class="hero__summary">
-        Hello! Welcome to my GitHub page! As a student at NYU, I am passionate about data analytics and its applications in economics. This portfolio showcases my skills, projects, and contact information. Feel free to explore and reach out if you'd like to connect!
+        Hello! Welcome to my page. As a student at NYU, I'm passionate about data analytics and its applications in economics. Here's a look at my skills, projects, and how to reach me.
       </p>
       <div class="hero__links">
         <a class="btn btn--primary" href="David_Huang_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
@@ -56,19 +65,28 @@
       </div>
     </section>
 
-    <div class="dim-divider" role="separator" aria-hidden="true"><span>// 02 — SKILLS AND EXPERIENCE</span></div>
+    <div class="section-divider" role="separator" aria-hidden="true"><span class="section-divider__badge">02</span><span>Experience &amp; Skills</span></div>
 
-    <!-- ============ CODING LANGUAGES ============ -->
+    <!-- ============ EXPERIENCE ============ -->
     <section class="skills" id="experience">
       <h2 class="section-title">Experience</h2>
       <ul class="chips">
-        <li class="chip">Growth Analytics @ Initiative (Omnicom Media)</li>
-        <li class="chip">Director of Data @ Ascend UCR</li>
-        <li class="chip">Marketing Intern @ American Marketing Association UCR</li>
+        <li><a class="chip" href="https://www.initiative.com" target="_blank" rel="noopener">Growth Analytics @ Initiative (Omnicom Media)</a></li>
+        <!-- <li class="chip">Growth Analytics @ Initiative (Omnicom Media)</li> -->
+        <li><a class="chip" href="https://library.ucr.edu/collections/digital-collections" target="_blank" rel="noopener">Digitization Services Student Assistant @ University of California, Riverside Library</a></li>
+                <li><a class="chip" href="https://aspb.ucr.edu/" target="_blank" rel="noopener">Marketing Intern @ Associated Students Programs Board</a></li>
       </ul>
     </section>
-    <break>
-    </break>
+
+    <section class="skills" id="leadership">
+      <h2 class="section-title">Leadership</h2>
+      <ul class="chips">
+        <li><a class="chip" href="https://www.ascendleadership.org/chapters/oc" target="_blank" rel="noopener">Director of Data @ Ascend UCR</a></li>
+        <!-- <li class="chip">Director of Data @ Ascend UCR</li> -->
+        <li><a class="chip" href="https://www.linkedin.com/company/amaucr/" target="_blank" rel="noopener">Finance Intern @ AMA at UCR</a></li>
+      </ul>
+    </section>
+
     <section class="skills" id="skills">
       <h2 class="section-title">Coding Languages</h2>
       <ul class="chips">
@@ -80,7 +98,7 @@
       </ul>
     </section>
 
-    <div class="dim-divider" role="separator" aria-hidden="true"><span>// 03 — HIGHLIGHTED PROJECTS</span></div>
+    <div class="section-divider" role="separator" aria-hidden="true"><span class="section-divider__badge">03</span><span>Highlighted Projects</span></div>
 
     <!-- ============ HIGHLIGHTED PROJECTS ============ -->
     <section class="projects" id="projects">
@@ -88,80 +106,45 @@
       <div class="project-grid">
 
         <article class="project-card">
-          <div class="project-card__tag">FIG. 01 — REV A</div>
+          <div class="project-card__tag">Project 01</div>
           <h3 class="project-card__title">NLP Project</h3>
           <p class="project-card__summary">
             Utilizing natural language processing techniques to analyze and understand text data. Developed within the UC Riverside CS 105 course, during the Spring 2026 quarter.
           </p>
-          <!-- <ul class="project-card__bullets">
-            <li>Built [feature] using [language/framework], improving [metric] by [result].</li>
-            <li>Designed [a system, API, or data model] to handle [scale or constraint].</li>
-            <li>Shipped to [users/team], with [outcome or feedback].</li> -->
-          </ul>
-          <a class="project-card__link" href="https://github.com/avamwilliams/105final" target="_blank" rel="noopener">https://github.com/avamwilliams/105final ↗</a>
+          <a class="project-card__link" href="https://github.com/avamwilliams/105final" target="_blank" rel="noopener">github.com/avamwilliams/105final ↗</a>
         </article>
 
         <article class="project-card">
-          <div class="project-card__tag">FIG. 02 — REV A</div>
-          <h3 class="project-card__title">N/A</h3>
+          <div class="project-card__tag">Project 02</div>
+          <h3 class="project-card__title">Coming soon</h3>
           <p class="project-card__summary">
-            TBD
+            Details to be added.
           </p>
-          <ul class="project-card__bullets">
-            <!-- <li>Implemented [core feature] with [tech stack], solving [specific challenge].</li>
-            <li>Optimized [process or query] to reduce [latency/cost] by [amount].</li>
-            <li>Wrote tests / docs / CI to keep the project maintainable.</li> -->
-          </ul>
-          <a class="project-card__link" href="https://github.com/" target="_blank" rel="noopener">TBA ↗</a>
+          <a class="project-card__link" href="https://github.com/davidyh6" target="_blank" rel="noopener">github.com/davidyh6 ↗</a>
         </article>
 
         <article class="project-card">
-          <div class="project-card__tag">FIG. 03 — REV A</div>
-          <h3 class="project-card__title">TBD</h3>
+          <div class="project-card__tag">Project 03</div>
+          <h3 class="project-card__title">Coming soon</h3>
           <p class="project-card__summary">
-            TBD
+            Details to be added.
           </p>
-          <!-- <ul class="project-card__bullets">
-            <li>Researched and prototyped [approach], comparing it against [alternative].</li>
-            <li>Integrated [third-party API/service] to add [capability].</li>
-            <li>Presented results to [audience], leading to [next step].</li>
-          </ul> -->
-          <a class="project-card__link" href="https://github.com/" target="_blank" rel="noopener">TBA ↗</a>
+          <a class="project-card__link" href="https://github.com/davidyh6" target="_blank" rel="noopener">github.com/davidyh6 ↗</a>
         </article>
 
       </div>
     </section>
 
-    <div class="dim-divider" role="separator" aria-hidden="true"><span>// 04 — OTHER PROJECTS</span></div>
+    <div class="section-divider" role="separator" aria-hidden="true"><span class="section-divider__badge">04</span><span>Other Projects</span></div>
 
-    <!-- ============ OTHER PROJECTS ============
+    <!-- ============ OTHER PROJECTS ============ -->
     <section class="archive" id="archive">
       <h2 class="section-title">Other Projects</h2>
-      <ul class="archive-list">
-        <li>
-          <a href="https://github.com/yourusername/project-four" target="_blank" rel="noopener">Project Four Name</a>
-          <span class="archive-list__desc">— one-line description of what it does.</span>
-        </li>
-        <li>
-          <a href="https://github.com/yourusername/project-five" target="_blank" rel="noopener">Project Five Name</a>
-          <span class="archive-list__desc">— one-line description of what it does.</span>
-        </li>
-        <li>
-          <a href="https://github.com/yourusername/project-six" target="_blank" rel="noopener">Project Six Name</a>
-          <span class="archive-list__desc">— one-line description of what it does.</span>
-        </li>
-        <li>
-          <a href="https://github.com/yourusername/project-seven" target="_blank" rel="noopener">Project Seven Name</a>
-          <span class="archive-list__desc">— one-line description of what it does.</span>
-        </li>
-        <li>
-          <a href="https://github.com/yourusername/project-eight" target="_blank" rel="noopener">Project Eight Name</a>
-          <span class="archive-list__desc">— one-line description of what it does.</span>
-        </li>
-      </ul>
+      <p class="archive__note">More projects will be added here soon — check back or see everything on GitHub in the meantime.</p>
+      <a class="btn btn--ghost" href="https://github.com/davidyh6" target="_blank" rel="noopener">View all on GitHub ↗</a>
     </section>
 
-    <div class="dim-divider" role="separator" aria-hidden="true"><span>// 05 — CONTACT</span></div> -->
+    <div class="section-divider" role="separator" aria-hidden="true"><span class="section-divider__badge">05</span><span>Contact</span></div>
 
     <!-- ============ EMAIL / CONTACT ============ -->
     <section class="contact" id="contact">
@@ -181,6 +164,19 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('primary-nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
   </script>
 </body>
 </html>
